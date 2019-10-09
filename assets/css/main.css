@@ -1,6 +1,6 @@
-body{
+body {
     font-family: 'Montserrat',
-    sans-serif;
+        sans-serif;
 }
 
 .banner {
@@ -40,6 +40,10 @@ body{
     margin-top: 6rem !important;
 }
 
-.fa{
-    margin:2px;
+.fa {
+    margin: 2px;
+}
+
+.card {
+    min-height: 260px;
 }
