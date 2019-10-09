@@ -56,3 +56,7 @@ blockquote:before {
 .mt-15 {
     margin-top: 6rem !important;
 }
+
+.fa{
+    margin:2px;
+}
