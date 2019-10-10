@@ -1,6 +1,7 @@
 $(document).ready(function () {
     const projects_div = $('#projects');
     const side_projects_div = $('#side_projects');
+    const email = $('.email');
     $('.fa-facebook-official').click(function () {
         openLink('https://www.facebook.com/veeraj1991');
     });
@@ -102,6 +103,8 @@ $(document).ready(function () {
     });
 
     side_projects_div.html(str);
+
+    email.html('veeraj91@yahoo.com');
 });
 
 
