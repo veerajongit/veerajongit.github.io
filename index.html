@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Veeraj Shenoy is a full stack developer with 7 years of experience. Experienced in Laravel, Angular, AWS, TDD and microservice style architecting." />
 	<title>Veeraj Shenoy - Full Stack Dev.</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,7 +16,7 @@
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149763103-1"></script>
-	<script src="assets/js/gtag.js"></script>
+	<script async src="assets/js/gtag.js"></script>
 </head>
 
 <body>
@@ -89,7 +90,7 @@
 					<div class="card pt-5 pt-sm-0 pt-lg-4">
 						<div class="card-body">
 							<h5 class="card-title">
-								<a href="https://approwess.com/" target="_blank">Approwess Technologies Pvt Ltd</a>
+								<a href="https://approwess.com/" target="_blank" rel="noopener">Approwess Technologies Pvt Ltd</a>
 								<br><small>Web Developer</small>
 							</h5>
 							<p class="card-text">August 2013 to December 2015</p>
@@ -104,7 +105,7 @@
 					<div class="card pt-5 pt-sm-0 pt-lg-4">
 						<div class="card-body">
 							<h5 class="card-title">
-								<a href="https://3iology.com/" target="_blank">3iology Tech Solutions LLP</a>
+								<a href="https://3iology.com/" target="_blank" rel="noopener">3iology Tech Solutions LLP</a>
 								<br><small>Tech Lead</small>
 							</h5>
 							<p class="card-text">January 2016 - Current</p>
@@ -190,18 +191,27 @@
 	</footer>
 	<!-- Footer -->
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	<script async src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
 	<script src="assets/js/projects.js"></script>
 	<script src="assets/js/side-projects.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script async src="assets/js/main.js"></script>
+
+	<script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script>
 </body>
 
 </html>

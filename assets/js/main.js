@@ -64,7 +64,7 @@ function generateList(array) {
 								<div class="card-body">
                                     <h5 class="card-title">`;
         if (value.url !== undefined && value.url.length !== 0) {
-            str += `<a href="${value.url[0]}" target='_blank'>${value.name}</a>`;
+            str += `<a href="${value.url[0]}" target="_blank" rel="noopener">${value.name}</a>`;
         } else {
             str += `${value.name}`;
         }
