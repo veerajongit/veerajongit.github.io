@@ -42,6 +42,7 @@ body {
 
 .fa {
     margin: 2px;
+    cursor: pointer;
 }
 
 .card {
@@ -63,4 +64,8 @@ body {
 
 .card-height>.row {
     min-height: 275px;
+}
+
+.uncolor:hover{
+    color: white;
 }
