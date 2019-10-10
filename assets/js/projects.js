@@ -14,7 +14,7 @@ const projects = [{
     url: []
 }, {
     name: 'Paypeoples',
-    technology: 'PHP, Bootstrap, MySQL, jQuery, Android SDK, Swift, AWS EC2, AWS S3 Bucket, AWS Face Rekognition',
+    technology: 'PHP, Bootstrap, MySQL, jQuery, EC2, S3 Bucket, Face Rekognition',
     platform: 'Desktop, Tablet',
     about: 'Providing the best Payroll & hrms Software for every size business at an affordable price, with excellent customer support',
     img: 'paypeoples.min.png',
