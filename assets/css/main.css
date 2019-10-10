@@ -4,7 +4,7 @@ body {
 }
 
 .banner {
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner.min.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,4 +46,21 @@ body {
 
 .card {
     min-height: 260px;
+}
+
+.height-100{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.height-25{
+    height: 25%;
+}
+
+.card-height>.row{
+    min-height: 275px;
 }
