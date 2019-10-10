@@ -21,7 +21,7 @@ const projects = [{
     url: ['http://www.paypeoples.com']
 }, {
     name: '3ioFlash POS',
-    technology: 'Ionic PHP MySQL',
+    technology: 'Ionic, PHP, MySQL',
     platform: 'Tablet',
     about: 'Take your restaurant to a next level with 3ioFlash\'s sophisticated POS application, designed & powered with Machine Learning to enhance your customer\'s dining experience.',
     img: '3iopos.min.png'
