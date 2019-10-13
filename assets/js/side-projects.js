@@ -12,7 +12,7 @@ const side_projects = [{
     name: 'SmartBills 2.0 GST',
     technology: 'PHP, MySQL, Bootstrap, jQuery',
     platform: 'Desktop',
-    about: 'A sales management system for hard material companies. GST implementation to adhere to new Indian government compliance. Currently this project is deployed in Fine Contact and Precision Press Components located in Virar',
+    about: 'A GST compliant billing application.',
     img: 'smartbills.min.png',
     url: ['https://github.com/veerajongit/smartbills2.0-GST']
 }, {
@@ -64,7 +64,7 @@ const side_projects = [{
     name: 'SuperLoans',
     technology: 'PHP, MySQL, Bootstrap,jQuery',
     platform: 'Desktop, Table, Mobile',
-    about: 'At superloans we are helping people buy property seemlessly, helping you know Eligibility, Rates, process, necessary documents list, EMI comparison and transfer for lowest rates.',
+    about: 'Helping people buy property seemlessly by letting them know their Eligibility, rate of interest, EMI and transfer at lowest rates.',
     img: 'superloans.min.png',
     url: ['https://www.superloans.in/']
 }];

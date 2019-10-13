@@ -2,14 +2,14 @@ const projects = [{
     name: '3ioNetra',
     technology: 'Bootstrap, PHP, MySQL, jQuery',
     platform: 'Desktop, Tablet',
-    about: '3ionetra is the perfect system for temples and Institutions to manage their income and expense tracking. The friendly user interface makes it quick and easy to capture your income and expense transactions for each day.',
+    about: '3ionetra is the perfect system for temples and Institutions to manage their income and expense tracking.',
     img: '3ionetra.min.png',
     url: ['http://www.3ionetra.in']
 }, {
     name: 'Hariguru',
     technology: 'Bootstrap, PHP, MySQL, jQuery',
     platform: 'Desktop, Tablet',
-    about: 'Hariguru is an application specially designed for Hallbooking and Seva Booking of Dahisar Sri Kashi Math. It is used by the Math for seva & donation management.',
+    about: 'Hariguru is an application specially designed for Hallbooking and Seva Booking of Dahisar Sri Kashi Math.',
     img: 'hariguru.min.png',
     url: []
 }, {
@@ -23,20 +23,20 @@ const projects = [{
     name: '3ioFlash POS',
     technology: 'Ionic, PHP, MySQL',
     platform: 'Tablet',
-    about: 'Take your restaurant to a next level with 3ioFlash\'s sophisticated POS application, designed & powered with Machine Learning to enhance your customer\'s dining experience.',
+    about: '3ioFlash\'s is a sophisticated POS application, designed & powered to work offline and sync.',
     img: '3iopos.min.png'
 }, {
     name: 'Third wave power',
     technology: 'Bootstrap, PHP',
     platform: 'Desktop, Tablet, Mobile',
-    about: 'Third Wave Power aims to emPOWER people around the world, by creating portable power solutions that are essential for work and life, on or off the power grid. Third Wave Power’s renewable power solutions are used in field work, emergency back-up situations, outdoor and rural environments the world over, bringing POWER to people where it matters.',
+    about: 'Third Wave Power aims to emPOWER people around the world, by creating portable power solutions that are essential for work and life.',
     img: 'thirdwavepower.min.jpg',
     url: ['http://thirdwavepower.com']
 }, {
     name: 'Dahisar Sri Kashi Math',
     technology: 'PHP, MySQL, Bootstrap',
     platform: 'Desktop, Tablet, Mobile',
-    about: 'Dahisar Sri Kashi Math is in Dahisar (E), the northen most western suburb of Greater Mumbai in Maharashtra.This project was conceived by Shrimad Sudhindra Tirtha Swami way back in eighties in the twentieth century on a plot of land at Dahisar(E) purchased in 1968 which is now popularly known as Sudhindranagar.',
+    about: 'Official website of Dahisar Sri Kashi Math located in Dahisar (E), the northen most western suburb of Greater Mumbai in Maharashtra.',
     img: 'dskm.min.png',
     url: ['http://www.dskm.org']
 }, {
@@ -50,7 +50,7 @@ const projects = [{
     name: 'The GA Group',
     technology: 'PHP, MYSQL, jQuery, Bootstrap',
     platform: 'Desktop, Tablet, Mobile',
-    about: 'An international business consultancy facilitating Singapore and ASEAN companies to build business linkages, promoting cross border trade and investments in the APAC region.The company has a niche focus in organising high-level global diaspora business summits & conferences in the emerging economies of the Asia Pacific region.',
+    about: 'An international business consultancy facilitating Singapore and ASEAN companies to build business linkages.',
     img: 'gagroup.min.jpg',
     url: ['http://gagrp.com']
 }, {
@@ -71,7 +71,7 @@ const projects = [{
     name: 'DEIDEAZ',
     technology: 'Bootstrap, PHP, MySQL',
     platform: 'Desktop, Tablet, Mobile',
-    about: 'Established in the year 2005, De Ideaz is a leading event management company offering full spectrum of business solutions from marketing to integrated tions.',
+    about: 'De Ideaz is a leading event management company offering full spectrum of business solutions from marketing to integrated tions.',
     img: 'deideaz.min.jpg',
     url: ['http://www.deideaz.com']
 }, {
@@ -85,7 +85,7 @@ const projects = [{
     name: '3iosales',
     technology: 'PHP, MySQL, Ionic',
     platform: 'Desktop, Tablet, Mobile',
-    about: '3iosales is Customer Relationship Management software that enables the business to nurture relationships with its customers by aggregating streams of customer data.',
+    about: '3iosales is Customer Relationship Management software that enables the business to nurture relationships with its their customers.',
     img: '3iosales.min.png',
     url: [
         'https://app.3iosales.com',
@@ -95,14 +95,14 @@ const projects = [{
     name: 'Hello Punjabi',
     technology: 'PHP, MySQL, Ionic',
     platform: 'Tablet, Mobile',
-    about: 'Hello PUNJABI Mobile App - India\'s first social media app with sole purpose of bringing the people of entire punjabi community to a single platform.',
+    about: 'India\'s first social media app with sole purpose of bringing the people of entire punjabi community to a single platform.',
     img: 'punjabi.min.png',
     url: ['https://play.google.com/store/apps/details?id=com.punjabicommunity.app']
 }, {
     name: 'Iris FMGS',
     technology: 'Laravel, MySQL, Android SDK',
     platform: 'Desktop, Mobile',
-    about: 'A facility management system that helps in achieving efficiency in the maintenance and operation process. It\'s highly customisable and configurable with user friendly design. It will have seamless work flow for modernising the maintenance day-to-day activities.',
+    about: 'A facility management system that helps in achieving efficiency in the maintenance and operation process.',
     img: 'iris.min.png',
     url: [
         'http://live.irisfmgs.com/',
@@ -119,7 +119,7 @@ const projects = [{
     name: 'Sagar Properties',
     technology: 'PHP, MySQL, jQuery, HTML, CSS',
     platform: 'Desktop, Tablet, Mobile',
-    about: 'Sagar Properties has been in the business of Real Estate Development for over three decades. With humble beginnings, establishment, and progress in the Mumbai real estate arena, we forayed into the Pune realty market in 2007-08.',
+    about: 'Official website of Sagar Properties, a Real Estate Development business spun for over three decades in Mumbai suburbs.',
     img: 'sagar-properties.min.png',
     url: ['https://www.sagarproperties.com/']
 }];

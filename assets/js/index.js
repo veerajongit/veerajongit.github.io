@@ -1,8 +1,10 @@
 $(document).ready(function () {
     const projects_div = $('#projects');
     const side_projects_div = $('#side_projects');
+    const readMore = $('.readmore');
     projects_div.html(generateList(projects));
-    side_projects_div.html(generateList(side_projects));
+    side_projects_div.html(generateList(side_projects, 1));
+    readMore.addClass('d-none');
 });
 
 
@@ -12,19 +14,19 @@ function openLink(url) {
 }
 
 
-function generateList(array) {
+function generateList(array, project = null) {
     let str = '';
 
     array.forEach(value => {
         str += `
     <div class="col-md-12 col-lg-6 mb-3">
-					<div class="card-height bg-light">
+					<div class="border ${project === null ? 'bg-light' : 'bg-white'} card-height ${project === null ? 'bg-light' : 'bg-white'}">
 						<div class="row no-gutters">
-							<div class="col-4 bg-white border d-none d-lg-block d-md-block">
+							<div class="col-4 ${project === null ? 'bg-white' : 'bg-light'} border d-none d-lg-block d-md-block">
 								<div class="height-100" style="background-image: url(assets/img/${value.img})">
 								</div>
 							</div>
-							<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+							<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 vh-100 d-flex align-items-center col justify-content-center">
 								<div class="card-body">
                                     <h5 class="card-title">`;
         if (value.url !== undefined && value.url.length !== 0) {

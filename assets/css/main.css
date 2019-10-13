@@ -63,9 +63,9 @@ body {
 }
 
 .card-height>.row {
-    min-height: 275px;
+    min-height: 316px;
 }
 
-.uncolor:hover{
+.uncolor:hover {
     color: white;
 }
