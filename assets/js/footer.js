@@ -31,6 +31,10 @@ $(document).ready(function () {
         window.location.href = `mailto:${name}@${provider}`;
     });
 
+    $('.fa-medium').click(function () {
+        openLink('https://medium.com/@veerajthegreat');
+    });
+
     email.html(`<a class="white uncolor" href="mailto:${name}@${provider}">${name}@${provider}</a>`);
 
     phone.html(`<a class="white uncolor" href="tel:${countrycode} ${initialno} ${nextno} ${finalno}">${countrycode} ${initialno} ${nextno} ${finalno}</a>`);
