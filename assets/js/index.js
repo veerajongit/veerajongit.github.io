@@ -4,7 +4,10 @@ $(document).ready(function () {
     const readMore = $('.readmore');
     projects_div.html(generateList(projects));
     side_projects_div.html(generateList(side_projects, 1));
-    readMore.addClass('d-none');
+
+    if (location.pathname === '/index.html' || location.pathname === '/') {
+        readMore.addClass('d-none');
+    }
 });
 
 
