@@ -3,10 +3,10 @@ $(document).ready(function () {
     const phone = $('.phone');
     const name = 'veeraj91';
     const provider = 'yahoo.com';
-    const countrycode = '+91';
-    const initialno = '808';
-    const nextno = '7198';
-    const finalno = '203';
+    const countrycode = '+61';
+    const initialno = '416';
+    const nextno = '851';
+    const finalno = '885';
     $('.fa-facebook-official').click(function () {
         openLink('https://www.facebook.com/veeraj1991');
     });
