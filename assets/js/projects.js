@@ -1,4 +1,10 @@
 const projects = [{
+    name: 'Review - Schools',
+    technology: 'Bootstrap, PHP, MySQL, jQuery',
+    platform: 'Desktop',
+    about: 'REVIEW is a criteria-based online student assessment solution formulated by program learning goals to satisfy Assurance of Learning (AoL)',
+    img: 'review-site.png'
+}, {
     name: '3ioNetra',
     technology: 'Bootstrap, PHP, MySQL, jQuery',
     platform: 'Desktop, Tablet',
