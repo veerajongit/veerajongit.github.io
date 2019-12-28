@@ -1,4 +1,4 @@
-var version = '0.0.2';
+var version = '0.0.3';
 var cacheName = 'hello-world-page';
 var filesToCache = [
   '/assets/css/main.css',

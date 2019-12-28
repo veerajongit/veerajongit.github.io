@@ -10,12 +10,8 @@ $(document).ready(function () {
     }
 
     $('.project-toggle').click(function () {
-        if ($(this).html() === 'Show More') {
-            $(this).html('Show Less');
-        } else {
-            $(this).html('Show More');
-        }
-        $(this).siblings('.hide-project').toggleClass('d-none');
+        ($(this).html() === 'Show More') ? $(this).html('Show Less') : $(this).html('Show More');
+        $(this).parent().siblings('.hide-project').toggleClass('d-none');
     });
 });
 
