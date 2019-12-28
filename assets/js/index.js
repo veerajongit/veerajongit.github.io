@@ -68,7 +68,10 @@ function generateList(array, project = null) {
     });
 
     if (count > 4) {
-        str += `<button class="col-12 btn btn-primary project-toggle">Show More</button>`;
+        str += `
+        <div class="col-md-12">
+            <button class="btn btn-block btn-primary project-toggle">Show More</button>
+        </div>`;
     }
 
     return str;
