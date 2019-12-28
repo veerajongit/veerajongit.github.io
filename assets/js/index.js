@@ -8,6 +8,15 @@ $(document).ready(function () {
     if (location.pathname === '/index.html' || location.pathname === '/') {
         readMore.addClass('d-none');
     }
+
+    $('.project-toggle').click(function () {
+        if ($(this).html() === 'Show More') {
+            $(this).html('Show Less');
+        } else {
+            $(this).html('Show More');
+        }
+        $(this).siblings('.hide-project').toggleClass('d-none');
+    });
 });
 
 
@@ -19,10 +28,11 @@ function openLink(url) {
 
 function generateList(array, project = null) {
     let str = '';
-
+    let count = 0;
     array.forEach(value => {
+        const lengthClass = (count > 3) ? 'd-none hide-project' : '';
         str += `
-    <div class="col-md-12 col-lg-6 mb-3">
+    <div class="col-md-12 col-lg-6 mb-3 ${lengthClass}">
 					<div class="border ${project === null ? 'bg-light' : 'bg-white'} card-height ${project === null ? 'bg-light' : 'bg-white'}">
 						<div class="row no-gutters">
 							<div class="col-4 ${project === null ? 'bg-white' : 'bg-light'} border d-none d-lg-block d-md-block">
@@ -54,7 +64,12 @@ function generateList(array, project = null) {
 					</div>
                 </div>
                 `;
+        count++;
     });
+
+    if (count > 4) {
+        str += `<button class="col-12 btn btn-primary project-toggle">Show More</button>`;
+    }
 
     return str;
 }
