@@ -1,12 +1,7 @@
 $(document).ready(function () {
     const email = $('.email');
-    const phone = $('.phone');
     const name = 'veeraj91';
     const provider = 'yahoo.com';
-    const countrycode = '+61';
-    const initialno = '416';
-    const nextno = '851';
-    const finalno = '885';
     $('.fa-facebook-official').click(function () {
         openLink('https://www.facebook.com/veeraj1991');
     });
@@ -36,6 +31,4 @@ $(document).ready(function () {
     });
 
     email.html(`<a class="white uncolor" href="mailto:${name}@${provider}">${name}@${provider}</a>`);
-
-    phone.html(`<a class="white uncolor" href="tel:${countrycode} ${initialno} ${nextno} ${finalno}">${countrycode} ${initialno} ${nextno} ${finalno}</a>`);
 });
