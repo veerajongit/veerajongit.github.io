@@ -37,13 +37,13 @@ function generateList(array, project = null) {
 							</div>
 							<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 vh-100 d-flex align-items-center col justify-content-center">
 								<div class="card-body">
-                                    <h5 class="card-title">`;
+                                    <h4 class="card-title">`;
         if (value.url !== undefined && value.url.length !== 0) {
             str += `<a href="${value.url[0]}" target="_blank" rel="noopener">${value.name}</a>`;
         } else {
             str += `${value.name}`;
         }
-        str += `</h5>
+        str += `</h4>
 									<p class="card-text">${value.about}</p>
 									<p class="card-text"><small class="text-muted">Platforms - ${value.platform}</small>
                                     </p>
