@@ -4,5 +4,10 @@ if (location.hostname !== '127.0.0.1' && location.hostname !== 'localhost') {
             .then(function () {
                 console.log('Service Worker Registered');
             });
+
+        const pathname = location.pathname;
+        if (pathname.indexOf(".html") > -1) {
+            location.href = pathname.replace('.html', '');
+        }
     }
 }
