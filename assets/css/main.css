@@ -68,3 +68,7 @@ body {
 .uncolor:hover {
     color: white;
 }
+
+.min-height{
+    min-height: 285px;
+}
