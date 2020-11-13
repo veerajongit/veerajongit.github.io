@@ -51,7 +51,7 @@ html {
     border: 2px solid #000;
 }
 
-.dark>article>.show-mobile>.profile, .dark>article>.hide-mobile>.profile {
+.dark>.content>article>.show-mobile>.profile, .dark>.content>article>.hide-mobile>.profile {
     border: 2px solid #fff;
 }
 
