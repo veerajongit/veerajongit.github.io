@@ -1,20 +1,22 @@
 
 $(document).ready(function () {
     var body = $('body');
-    checkAndApplyBrightness(body);
+    var aTag = $('a');
+    checkAndApplyBrightness(body, aTag);
 
     $('.brightness').click(function () {
         body.hasClass('dark') ? localStorage.setItem('brightness', 'bright') : localStorage.setItem('brightness', 'dark');
-        checkAndApplyBrightness(body);
+        checkAndApplyBrightness(body, aTag);
     });
 });
 
-function checkAndApplyBrightness(body) {
+function checkAndApplyBrightness(body, aTag) {
     var currentBrightness = localStorage.getItem('brightness');
     if (currentBrightness == undefined) {
         currentBrightness = 'bright';
     }
     (currentBrightness === 'dark') ? body.addClass('dark') : body.removeClass('dark');
+    (currentBrightness === 'dark') ? aTag.addClass('white') : aTag.removeClass('white');
 }
 
 
