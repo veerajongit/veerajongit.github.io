@@ -11,7 +11,7 @@ $(document).ready(function () {
     });
 
     $('.fa-twitter-square').click(function () {
-        openLink('https://twitter.com/thecoderknight');
+        openLink('https://twitter.com/this_object');
     });
 
     $('.fa-github-square').click(function () {
