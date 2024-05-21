@@ -1,4 +1,10 @@
 const projects = [{
+    name: 'WAMS',
+    technology: 'React, PHP, Laravel, MySQL',
+    platform: 'Desktop',
+    about: 'WAMS is an online workload allocation system designed to make workload allocation and planning easy. ',
+    img: 'wams.png'
+},{
     name: 'Review - Schools',
     technology: 'Bootstrap, PHP, MySQL, jQuery',
     platform: 'Desktop',
