@@ -24,51 +24,31 @@ function openLink(url) {
 
 function generateList(array, project = null) {
     let str = '';
-    let count = 0;
     array.forEach(value => {
-        const lengthClass = (count > 3) ? 'd-none hide-project' : '';
         str += `
-    <div class="col-md-12 col-lg-6 mb-3 ${lengthClass}">
-					<div class="border ${project === null ? 'bg-light' : 'bg-white'} card-height ${project === null ? 'bg-light' : 'bg-white'}">
-						<div class="row no-gutters">
-							<div class="col-4 ${project === null ? 'bg-white' : 'bg-light'} border d-none d-lg-block d-md-block">
-								<div class="height-100" style="background-image: url(assets/img/${value.img})">
-								</div>
-							</div>
-							<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 vh-100 d-flex align-items-center col justify-content-center">
-								<div class="card-body">
-                                    <h4 class="card-title">`;
-        if (value.url !== undefined && value.url.length !== 0) {
-            str += `<a href="${value.url[0]}" target="_blank" rel="noopener">${value.name}</a>`;
-        } else {
-            str += `${value.name}`;
-        }
-        str += `</h4>
-									<p class="card-text">${value.about}</p>
-									<p class="card-text"><small class="text-muted">Platforms - ${value.platform}</small>
-                                    </p>
-                                    <p>`;
+        <div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden mx-auto">
+            <img class="w-full h-48 object-cover" src="assets/img/${value.img}" alt="${value.name}">
+            <div class="p-6">
+                <h2 class="text-xl font-semibold text-gray-800">${value.name}</h2>
+                <p class="mt-2 text-gray-600">${value.about}</p>
+                
+                <div class="mt-4">
+                    <h4 class="text-gray-400 font-xs">Platforms: ${value.platform}</h4>
+                    <div class="flex flex-wrap mt-2 gap-2">`;
 
         value.technology.split(',').forEach(technology => {
-            str += `<span class="badge badge-primary">${technology}</span>&nbsp;`;
+            const colors = ['bg-blue-100 text-blue-800', 'bg-red-100 text-red-800', 'bg-green-100 text-green-800', 'bg-yellow-100 text-yellow-800', 'bg-purple-100 text-purple-800'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            str += `<span class="inline-block ${color} text-xs font-semibold px-2.5 py-0.5 rounded">${technology}</span>`;
         });
 
-        str += `</p>
-								</div>
-							</div>
-						</div>
-					</div>
-                </div>
-                `;
-        count++;
-    });
-
-    if (count > 4) {
         str += `
-        <div class="col-md-12">
-            <button class="btn btn-block btn-primary project-toggle">Show More</button>
-        </div>`;
-    }
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+    });
 
     return str;
 }
