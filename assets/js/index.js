@@ -26,11 +26,11 @@ function generateList(array, project = null) {
     let str = '';
     array.forEach(value => {
         str += `
-        <div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden mx-auto">
-            <img class="w-full h-48 object-cover" src="assets/img/${value.img}" alt="${value.name}">
+        <div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden mx-auto border-t">
+            <img class="w-full h-48 object-contain border-b" src="assets/img/${value.img}" alt="${value.name}">
             <div class="p-6">
                 <h2 class="text-xl font-semibold text-gray-800">${value.name}</h2>
-                <p class="mt-2 text-gray-600">${value.about}</p>
+                <p class="mt-2 text-gray-600 text-sm" style="min-height: 80px;">${value.about}</p>
                 
                 <div class="mt-4">
                     <h4 class="text-gray-400 font-xs">Platforms: ${value.platform}</h4>
