@@ -3,13 +3,15 @@ const projects = [{
     technology: 'React, PHP, Laravel, MySQL',
     platform: 'Desktop',
     about: 'WAMS is an online workload allocation system designed to make workload allocation and planning easy. ',
-    img: 'wams.png'
+    img: 'wams.png',
+    url: ['https://academ.com.au']
 },{
-    name: 'Review - Schools',
+    name: 'Review',
     technology: 'Bootstrap, PHP, MySQL, jQuery',
     platform: 'Desktop',
     about: 'REVIEW is a criteria-based online student assessment solution formulated by program learning goals to satisfy Assurance of Learning (AoL)',
-    img: 'review-site.png'
+    img: 'review-site.png',
+    url: ['https://academ.com.au']
 }, {
     name: '3ioNetra',
     technology: 'Bootstrap, PHP, MySQL, jQuery',

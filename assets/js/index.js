@@ -1,54 +1,35 @@
-$(document).ready(function () {
-    const projects_div = $('#projects');
-    const side_projects_div = $('#side_projects');
-    const readMore = $('.readmore');
-    projects_div.html(generateList(projects));
-    side_projects_div.html(generateList(side_projects, 1));
-
-    if (location.pathname === '/index.html' || location.pathname === '/') {
-        readMore.addClass('d-none');
-    }
-
-    $('.project-toggle').click(function () {
-        ($(this).html() === 'Show More') ? $(this).html('Show Less') : $(this).html('Show More');
-        $(this).parent().siblings('.hide-project').toggleClass('d-none');
-    });
-});
-
-
-function openLink(url) {
-    var win = window.open(url, '_blank');
-    win.focus();
-}
-
-
-function generateList(array, project = null) {
-    let str = '';
-    array.forEach(value => {
-        str += `
-        <div class="max-w-xs bg-white rounded-lg shadow-lg overflow-hidden mx-auto border-t">
-            <img class="w-full h-48 object-contain border-b" src="assets/img/${value.img}" alt="${value.name}">
-            <div class="p-6">
-                <h2 class="text-xl font-semibold text-gray-800">${value.name}</h2>
-                <p class="mt-2 text-gray-600 text-sm" style="min-height: 80px;">${value.about}</p>
-                
-                <div class="mt-4">
-                    <h4 class="text-gray-400 font-xs">Platforms: ${value.platform}</h4>
-                    <div class="flex flex-wrap mt-2 gap-2">`;
-
-        value.technology.split(',').forEach(technology => {
-            const colors = ['bg-blue-100 text-blue-800', 'bg-red-100 text-red-800', 'bg-green-100 text-green-800', 'bg-yellow-100 text-yellow-800', 'bg-purple-100 text-purple-800'];
-            const color = colors[Math.floor(Math.random() * colors.length)];
-            str += `<span class="inline-block ${color} text-xs font-semibold px-2.5 py-0.5 rounded">${technology}</span>`;
-        });
-
-        str += `
-                    </div>
+function setProjects(img, description, companyURL, companyName) {
+    return `
+    <div
+            class="flex flex-col border border-y-0 border-gray-100 hover:shadow-2xl shadow-lg rounded-lg pt-0 pb-1 mb-4 my-4">
+            <div class="w-full bg-cover"
+                style="background-image: url(${img}); min-height: 100px;">
+                <div class="translucent h-full w-full"></div>
+            </div>
+            <div class="w-full text-xs text-gray-500 px-2 flex flex-col justify-between h-full">
+                <div class="text-sm py-2 text-gray-600">
+                    ${description}
+                </div>
+                <div class="text-right">
+                    ${companyURL !== '' ? `<a href="${companyURL}" target="_blank">${companyName}</a>` : `${companyName}`}
                 </div>
             </div>
         </div>
-        `;
-    });
-
-    return str;
+    `;
 }
+
+let projectDiv = ``;
+projects.forEach(project => {
+    let url = ``;
+    if(project.url !== undefined && project.url.length > 0) {
+        url = project.url[0];
+    }
+    projectDiv += setProjects('/assets/img/' + project.img, project.about, url, project.name);
+});
+document.getElementById('projects').innerHTML = projectDiv;
+
+let sideProjectDiv = ``;
+side_projects.forEach(project => {
+    sideProjectDiv += setProjects('/assets/img/' + project.img, project.about, project.url[0], project.name);
+});
+document.getElementById('side_projects').innerHTML = sideProjectDiv;
