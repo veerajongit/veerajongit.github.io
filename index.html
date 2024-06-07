@@ -41,13 +41,13 @@
 	<div class="w-full">
 		<div style="background-image: url(assets/img/banner.min.jpg);"
 			class="bg-cover bg-center bg-no-repeat text-white">
-			<div class="flex justify-evenly items-center p-2 translucent">
-				<div class="flex-col text-center">
+			<div class="p-2 translucent grid sm:grid-cols-2">
+				<div class="text-center flex flex-col items-center">
 					<div class="me mb-2"></div>
 					<div class="text-md font-semibold">Veeraj Shenoy</div>
 					<div class="text-xs font-normal">Full Stack Dev</div>
 				</div>
-				<div class="flex-col text-center">
+				<div class="text-center flex flex-col items-center justify-center">
 					<div class="text-sm">
 						"Programming is the new Wizardry."
 					</div>
@@ -66,7 +66,7 @@
 			</div>
 		</div>
 
-		<div class="flex p-6 py-4 px-4 sm:px-14 text-sm text-gray-600">
+		<div class="flex p-6 py-4 px-6 sm:px-14 text-sm text-gray-600">
 			Experienced software development professional with over a decade of industry experience, holding a
 			Master’s
 			degree in IT, and an AWS Developer Associate certification. Skilled in PHP, MySQL, JavaScript, Laravel,
@@ -80,7 +80,7 @@
 			<div class="flex items-center justify-center">
 				<h2 class="text-lg font-extrabold border-b-4 border-blue-500 p-1">Work Experience</h2>
 			</div>
-			<div class="p-4 px-10 grid md:grid-cols-2 gap-4 grid-cols-1">
+			<div class="p-4 sm:px-10 grid md:grid-cols-2 gap-4 grid-cols-1">
 				<div class="bg-white hover:shadow-2xl shadow-lg rounded-lg p-2 px-4 my-4">
 					<div class="flex justify-between">
 						<div class="text-md font-bold">
@@ -182,7 +182,7 @@
 			<div class="flex items-center justify-center">
 				<h2 class="text-lg font-extrabold border-b-4 border-blue-500 p-1">Projects</h2>
 			</div>
-			<div class="p-4 px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="projects">
+			<div class="p-4 sm:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="projects">
 			</div>
 		</div>
 
@@ -190,12 +190,12 @@
 			<div class="flex items-center justify-center">
 				<h2 class="text-lg font-extrabold border-b-4 border-blue-500 p-1">Side Projects</h2>
 			</div>
-			<div class="p-4 px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="side_projects">
+			<div class="p-4 sm:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="side_projects">
 			</div>
 		</div>
 
-		<div class="bg-gray-800 text-white p-2 grid grid-cols-1 sm:grid-cols-2">
-			<div class="flex p-6 gap-6">
+		<div class="bg-gray-800 text-white p-0 sm:px-8">
+			<div class="flex p-6 gap-6 grid grid-cols-1 sm:grid-cols-2">
 				<div class="flex flex-col flex-1 gap-2">
 					<div class="text-md font-semibold">
 						Veeraj Shenoy
@@ -221,51 +221,6 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		function addEventListenerToClass(className, event, callback) {
-			const elements = document.getElementsByClassName(className);
-			for (let i = 0; i < elements.length; i++) {
-				elements[i].addEventListener(event, callback);
-			}
-		}
-
-		function openLink(url) {
-			var win = window.open(url, '_blank');
-			win.focus();
-		}
-
-		document.addEventListener("DOMContentLoaded", function () {
-			const name = 'veeraj91';
-			const provider = 'yahoo.com';
-
-			addEventListenerToClass('fa-facebook-official', 'click', function () {
-				openLink('https://www.facebook.com/veeraj1991');
-			});
-
-			addEventListenerToClass('fa-linkedin-square', 'click', function () {
-				openLink('https://www.linkedin.com/in/veeraj-shenoy-3a644713a');
-			});
-
-			addEventListenerToClass('fa-twitter-square', 'click', function () {
-				openLink('https://twitter.com/this_object');
-			});
-
-			addEventListenerToClass('fa-github-square', 'click', function () {
-				openLink('https://github.com/veerajongit/');
-			});
-
-			addEventListenerToClass('fa-stack-overflow', 'click', function () {
-				openLink('https://stackexchange.com/users/5382849/veeraj-shenoy');
-			});
-
-			addEventListenerToClass('fa-medium', 'click', function () {
-				openLink('https://medium.com/@veerajthegreat');
-			});
-
-			document.getElementById('email').innerHTML = `<a href="mailto:${name}@${provider}">${name}@${provider}</a>`;
-		});
-	</script>
-
 	<script src="assets/js/projects.js"></script>
 	<script src="assets/js/side-projects.js"></script>
 	<script src="assets/js/index.js"></script>

@@ -1,3 +1,46 @@
+function addEventListenerToClass(className, event, callback) {
+    const elements = document.getElementsByClassName(className);
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].addEventListener(event, callback);
+    }
+}
+
+function openLink(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const name = 'veeraj91';
+    const provider = 'yahoo.com';
+
+    addEventListenerToClass('fa-facebook-official', 'click', function () {
+        openLink('https://www.facebook.com/veeraj1991');
+    });
+
+    addEventListenerToClass('fa-linkedin-square', 'click', function () {
+        openLink('https://www.linkedin.com/in/veeraj-shenoy-3a644713a');
+    });
+
+    addEventListenerToClass('fa-twitter-square', 'click', function () {
+        openLink('https://twitter.com/this_object');
+    });
+
+    addEventListenerToClass('fa-github-square', 'click', function () {
+        openLink('https://github.com/veerajongit/');
+    });
+
+    addEventListenerToClass('fa-stack-overflow', 'click', function () {
+        openLink('https://stackexchange.com/users/5382849/veeraj-shenoy');
+    });
+
+    addEventListenerToClass('fa-medium', 'click', function () {
+        openLink('https://medium.com/@veerajthegreat');
+    });
+
+    document.getElementById('email').innerHTML = `<a href="mailto:${name}@${provider}">${name}@${provider}</a>`;
+});
+
 function setProjects(img, description, companyURL, companyName) {
     return `
     <div
